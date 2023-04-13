@@ -1,15 +1,51 @@
 *{
+    box-sizing: border-box;
 
 }
+
+.profile-picture{
+
+    width: 150px;
+    border-radius: 50%;
+    padding: 1%;
+    align-items: left;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: right;
+    text-align: end;
+    color: azure;
+}
+
 body{
     font-family: Arial;
     margin: 0;
+    background-color: #13293d;
+    border-width: 5px;
+    border-color: aliceblue;
 }
 main{
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
+aside{
+    flex: 15%;
+    background-color: beige;
+}
+aside img{
+    flex-wrap: wrap;
+    flex: 25%;
+}
+aside h3{
+    flex:50%;
+}
 
+.content{
+    flex: 85%;
+}
 .main-header{
     display: flex;
     justify-content: space-between;
@@ -22,45 +58,48 @@ main{
     text-align: left;
     width: 75%;
 }
-.profile-picture{
-
-        width: 150px;
-        border-radius: 50%;
-        padding: 1%;
-        align-items: left;
-}
-
-.nav-bar{
-        display: flex;
-        justify-content: right;
-        text-align: end;
-}
 
 .about{
-    display: flex;
-    font-size: large;
-    justify-content: center;
+    flex: 1 0 35%;
+    padding: 10px;
+    text-align: center;
+    border-width: 4px;
+    min-width: 25%;
+    color: azure;
 }
 .project{
+    flex: 70%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
+}
+.project-main{
+    flex: 1 0 50%;
+    padding: 10px;
+    text-align: center;
+    border-width: 20px;
+    min-width: 90%;
+    max-width: 75;
+}
+.project header{
+    padding: 20px;
+    background: #13293d;
+    color: azure;
 }
 .projects{
     flex: 1 0 35%;
     padding: 10px;
     text-align: center;
-    border-style: solid;
-    border-width: 1px;
+    border-width: 20px;
     min-width: 25%;
   }
 
-.projects header{
+.project header{
     padding: 20px;
     background: #13293d;
-    color: #fff;
+    color: azure;
 }
-.projects img{
+.project img{
     width: 100%;
 }
 aside{
@@ -70,8 +109,9 @@ aside{
 footer{
     display: flex;
     justify-content:space-between;
-    background: blue;
+    background: rgb(53, 53, 86);
+    color: azure;
 }
 .contcact{
-    
+
 }
