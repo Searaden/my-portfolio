@@ -15,6 +15,17 @@
     display: flex;
     justify-content: right;
     text-align: end;
+    color: gainsboro;
+}
+
+.nav-bar a{
+    color: gainsboro;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar a:hover{
     color: azure;
 }
 
@@ -61,7 +72,7 @@ aside h3{
 
 .about{
     flex: 1 0 35%;
-    padding: 10px;
+    padding: 10px 100px;
     text-align: center;
     border-width: 4px;
     min-width: 25%;
@@ -73,14 +84,28 @@ aside h3{
     flex-wrap: wrap;
     margin-top: 2%;
 }
-.project-main{
+.project-main,
+.projects{
     flex: 1 0 50%;
-    padding: 10px;
+    padding: 10px 100px;
     text-align: center;
     border-width: 20px;
     min-width: 90%;
     max-width: 75;
 }
+.project-main:hover,
+.projects:hover {
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+.project-main img:hover,
+.projects img:hover{
+  box-shadow: 0 0 10px silver;
+}
+
+.project-main h2:hover,
+
 .project header{
     padding: 20px;
     background: #13293d;
@@ -88,22 +113,21 @@ aside h3{
 }
 .projects{
     flex: 1 0 35%;
-    padding: 10px;
+    padding: 10px 50px;
     text-align: center;
-    border-width: 20px;
     min-width: 25%;
-  }
-
-.project header{
-    padding: 20px;
-    background: #13293d;
-    color: azure;
 }
+
 .project img{
     width: 100%;
 }
-aside{
+aside h2{
+    font-size: 22px;
+    flex-wrap: wrap;
+}   
 
+aside h3{
+    flex-wrap: wrap;
 }
 
 footer{
@@ -114,4 +138,20 @@ footer{
 }
 .contcact{
 
+}
+@media screen and (max-width: 768px) {
+
+    .project-main, .projects {
+    flex: 1 0 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    aside h2,h3 {
+        font-size: 23px;
+        width: 20%;
+        display: inline-block;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
 }
