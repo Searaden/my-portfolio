@@ -2,7 +2,9 @@
     box-sizing: border-box;
 
 }
-
+header{
+    background-image: url("./background-img.jpg");
+}
 .profile-picture{
 
     width: 150px;
@@ -136,8 +138,15 @@ footer{
     background: rgb(53, 53, 86);
     color: azure;
 }
-.contcact{
+footer a{
+    color: gainsboro;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
 
+footer a:hover{
+    color: azure;
 }
 @media screen and (max-width: 768px) {
 
