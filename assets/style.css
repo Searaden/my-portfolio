@@ -136,7 +136,7 @@ footer{
     display: flex;
     justify-content:space-between;
     background: rgb(53, 53, 86);
-    color: azure;
+    color: gainsboro;
 }
 footer a{
     color: gainsboro;
