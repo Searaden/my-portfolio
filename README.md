@@ -7,4 +7,5 @@ This is a WIP portfolio for myself. I made this so future clients and perspectiv
 ## Usage
 A simple to use portfolio providing links for navigation, hover effect and links for projects and contact information
 
-![example screenshot with hover effect](assets/screenshot.png)
+![example screenshot with hover effect](assets/screenshot.png)cd
+cd
